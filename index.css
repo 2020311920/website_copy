@@ -7,9 +7,12 @@ header h1 a{display:block; width: 110px; height: 53px; color: transparent; backg
 
 header .lnb li{display: inline-block;}
 header .lnb li a{display: block; height: 81px; padding: 0 35px; font-size: 17px; color:#333; line-height: 81px;}
+header .lnb li a:hover{color: #2d5b79; font-weight: bold; text-decoration: underline;}
 
 header .spot{position: absolute; top:0; right:50px;}
-header .spot li{float: left;}
+header .spot li{position: relative; float: left;}
 header .spot li:after{content:""; position: absolute; left:0; top:50%; width:1px; height:7px; background:#ccc; transform: translateY(-50%);}
+header .spot li:first-child:after{display : none;}
 header .spot li a{display: block; height:81px; padding: 0 10px; line-height:81px;}
+header .spot li a:hover{color: #2d5b79; font-weight: bold;}
 header .spot li:last-child a{padding-right:0;}
