@@ -7,7 +7,9 @@ header h1 a{display:block; width: 110px; height: 53px; color: transparent; backg
 
 header .lnb li{display: inline-block;}
 header .lnb li a{display: block; height: 81px; padding: 0 35px; font-size: 17px; color:#333; line-height: 81px;}
-header .lnb li a:hover{color: #2d5b79; font-weight: bold; text-decoration: underline;}
+header .lnb li a:hover{color: #2d5b79; font-weight: bold;}
+header .lnb li a span{ position: relative;}
+header .lnb li a:hover span:after {position: absolute; left:0; bottom: -9px; content: ""; display:block; width:100%; height:1px; background:#2d5b79;}
 
 header .spot{position: absolute; top:0; right:50px;}
 header .spot li{position: relative; float: left;}
@@ -15,4 +17,6 @@ header .spot li:after{content:""; position: absolute; left:0; top:50%; width:1px
 header .spot li:first-child:after{display : none;}
 header .spot li a{display: block; height:81px; padding: 0 10px; line-height:81px;}
 header .spot li a:hover{color: #2d5b79; font-weight: bold;}
+header .spot li a span{ position: relative;}
+header .spot li a:hover span:after {position: absolute; left:0; bottom: -9px; content: ""; display:block; width:100%; height:1px; background:#2d5b79;}
 header .spot li:last-child a{padding-right:0;}
